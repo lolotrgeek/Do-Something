@@ -1,0 +1,26 @@
+{
+  "name": "do-something",
+  "version": "0.0.0",
+  "description": "Find something to do.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "activities",
+    "events",
+    "experiences"
+  ],
+  "author": "lolotrgeek",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "express": "^4.15.3",
+    "googleapis": "^20.0.1",
+    "googleplaces": "^0.6.1",
+    "node-geocoder": "^3.18.0",
+    "pos": "^0.4.2",
+    "request": "^2.81.0",
+    "sqlite3": "^3.1.8"
+  }
+}

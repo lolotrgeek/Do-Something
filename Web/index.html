@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <style>
+            body {text-align:center;} 
+            ul {list-style: none; padding:0;}
+        </style>
+    </head>    
+    <body ng-app="doSomething" ng-init="" ng-controller="mainCtrl">
+
+        <div id="add" ng-controller="addCtrl">
+            <h1>Add Something</h1>
+            <p>Describe something in 100 characters.</p>
+            <input type="text" id="addText" ng-model="addText" maxlength="100"></input>
+            <br />
+            <button id="confirm" ng-click="addSomething()">Confirm</button>
+
+            <ul>
+                <li ng-repeat="x in interests">
+                    {{ x }}
+                </li>
+            </ul>
+        </div><!-- add-->
+
+        <div id="do" ng-controller="doCtrl">
+        <h1>Do Something</h1>
+
+            <button ng-click="doSomething()">Do Something</button>
+            
+            <div id="result" ng-bind="result"></div>
+            
+            <ul>
+                <li ng-repeat="y in images">
+                    {{ y }}
+                </li>
+            </ul>
+        </div><!-- do -->
+        <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="app.js"></script>       
+    </body>
+</html>
