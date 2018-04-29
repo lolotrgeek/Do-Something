@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="signOut()">Logout</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="All" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Favorites" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Added" tabIcon="contacts"></ion-tab>
+</ion-tabs>

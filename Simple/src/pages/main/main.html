@@ -1,0 +1,34 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <!--<h3>{{ (item | async)?.title }}</h3>-->
+  <h3>Something to do is displayed right here.</h3>
+
+  <ion-slides class="something-slider" loop="true" slidesPerView="2">
+    <ion-slide *ngFor="let img of images">
+      <img src="assets/img/{{img}}" class="thumb-img" imageViewer/>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>
+<ion-footer>
+    <button ion-button icon-only clear large color="grey" (click)="hate()">
+      <ion-icon name="close"></ion-icon>
+    </button>
+
+
+    <button ion-button icon-only clear large color="grey" (click)="mainMenu()">
+      <ion-icon name="arrow-up"></ion-icon>
+    </button>
+
+
+    <button ion-button icon-only clear large color="grey" (click)="like()">
+      <ion-icon name="heart"></ion-icon>
+    </button>
+</ion-footer>
